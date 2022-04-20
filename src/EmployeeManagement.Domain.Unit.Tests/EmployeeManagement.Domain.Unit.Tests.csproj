@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -24,7 +24,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\EmployeeManagemet.Infrastructure\EmployeeManagemet.Infrastructure.csproj" />
+    <ProjectReference Include="..\EmployeeManagement.Domain\EmployeeManagement.Domain.csproj" />
+    <ProjectReference Include="..\EmployeeManagemet.Infrastructure\EmployeeManagemet.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
