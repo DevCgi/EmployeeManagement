@@ -2,7 +2,7 @@
 {
     public class SurnameObject
     {
-        public string Surname { get; private set; }
+        public string Value { get; private set; }
 
         public SurnameObject(string surname)
         {
@@ -12,7 +12,7 @@
             if(surname.Length > 50)
                 throw new ArgumentOutOfRangeException($"{nameof(surname)} cannot be longer than 50 chars");
 
-            Surname = surname;
+            Value = surname;
         }
     }
 }

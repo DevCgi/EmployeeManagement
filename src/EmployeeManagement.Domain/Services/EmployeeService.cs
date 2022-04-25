@@ -20,7 +20,7 @@ namespace EmployeeManagement.Domain.Services
             var surname = new SurnameObject(employeeDto.Surname);
             var gender = new GenderObject(employeeDto.Gender);
             var registrationNumber = await _registrationNumberFactory.Create();
-            var employee = new Employee.Employee(Guid.NewGuid(), registrationNumber, surname, gender);
+            var employee = new Employee(Guid.NewGuid(), registrationNumber, surname, gender);
 
             await _employeeRepository.AddEmployeeAsync(employee);
 
@@ -51,9 +51,9 @@ namespace EmployeeManagement.Domain.Services
                 employeesDto.Add(new GetEmployeeDto()
                 {
                     Id = e.Id,
-                    Gender = e.Gender.Gender,
-                    RegistrationNumber = e.RegistrationNumber.RegistrationNumber,
-                    Surname = e.Surname.Surname,
+                    Gender = e.Gender.Value,
+                    RegistrationNumber = e.RegistrationNumber.Value,
+                    Surname = e.Surname.Value,
                 });
             });
 

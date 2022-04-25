@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagemet.Infrastru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagement.Domain.Unit.Tests", "src\EmployeeManagement.Domain.Unit.Tests\EmployeeManagement.Domain.Unit.Tests.csproj", "{0C719E0F-91C2-412E-921C-C8BB0C08FBD0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{72F6D6EF-96CF-46F2-87B5-0047E4908366}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0C719E0F-91C2-412E-921C-C8BB0C08FBD0} = {72F6D6EF-96CF-46F2-87B5-0047E4908366}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {85CF1D08-3A93-42C1-B325-85A25C038EB1}
