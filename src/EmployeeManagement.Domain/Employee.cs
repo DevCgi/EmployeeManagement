@@ -1,6 +1,6 @@
 ﻿using EmployeeManagement.Domain.ValueObjects;
 
-namespace EmployeeManagement.Domain.Employee
+namespace EmployeeManagement.Domain
 {
     public class Employee
     {

@@ -4,11 +4,11 @@ namespace EmployeeManagement.Domain.ValueObjects
 {
     public class GenderObject
     {
-        public Gender Gender { get; private set; }
+        public Gender Value { get; private set; }
 
         public GenderObject(Gender gender)
         {
-            Gender = gender;
+            Value = gender;
         }
     }
 }

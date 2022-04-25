@@ -1,5 +1,4 @@
 ﻿using EmployeeManagement.Domain;
-using EmployeeManagement.Domain.Employee;
 
 namespace EmployeeManagemet.Infrastructure
 {

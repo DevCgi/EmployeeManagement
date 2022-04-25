@@ -2,7 +2,7 @@
 {
     public class RegistrationNumberObject
     {
-        public string RegistrationNumber { get; private set; }
+        public string Value { get; private set; }
 
         public RegistrationNumberObject(string registrationNumber)
         {
@@ -15,7 +15,7 @@
             if (registrationNumber.Length < 8)
                 throw new ArgumentException($"{nameof(registrationNumber)} cannot be shorter than 8 chars");
 
-            RegistrationNumber = registrationNumber;
+            Value = registrationNumber;
         }
     }
 }

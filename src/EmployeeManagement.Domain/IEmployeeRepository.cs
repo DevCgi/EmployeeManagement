@@ -2,14 +2,14 @@
 {
     public interface IEmployeeRepository
     {
-        public Task<Guid> AddEmployeeAsync(Employee.Employee employee);
-        public Task<Guid> UpdateEmployeeAsync(Employee.Employee employee);
+        public Task<Guid> AddEmployeeAsync(Employee employee);
+        public Task<Guid> UpdateEmployeeAsync(Employee employee);
 
-        public Task<Employee.Employee> GetEmployeeAsync(Guid Id);
+        public Task<Employee> GetEmployeeAsync(Guid Id);
 
-        public Task<List<Employee.Employee>> GetAll();
+        public Task<List<Employee>> GetAll();
 
-        public Task<Employee.Employee> GetLast();
+        public Task<Employee> GetLast();
 
     }
 }

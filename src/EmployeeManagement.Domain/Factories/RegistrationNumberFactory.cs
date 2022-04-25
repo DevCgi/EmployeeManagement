@@ -23,7 +23,7 @@ namespace EmployeeManagement.Domain.Factories
             }
             else
             {
-                if (int.TryParse(lastEmployee.RegistrationNumber.RegistrationNumber, out registrationNumber))
+                if (int.TryParse(lastEmployee.RegistrationNumber.Value, out registrationNumber))
                 {
                     registrationNumber++;
                 }
